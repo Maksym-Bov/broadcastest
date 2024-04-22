@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es6",
+        "esModuleInterop": true,
+        "sourceMap": true,
+        "strict": true,
+        "noEmit": false,
+        "types": [
+            "node",
+        ],
+        "resolveJsonModule": true
+    },
+    "exclude": [
+        "node_modules",
+    ],
+    "include": [
+        "./tests/**/*.ts",
+        "./*.ts",
+      "POM/**/*.ts",
+      "fixtures/**/*.ts",
+      "helpers/**/*.ts",
+    ]
+}

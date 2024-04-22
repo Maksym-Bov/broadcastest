@@ -1,0 +1,34 @@
+{
+    "name": "nxt",
+    "version": "1.0.1",
+    "description": "**Short description**",
+    "main": "index.ts",
+    "scripts": {
+        "lint": "eslint . ",
+        "lint:fix": "eslint . --fix",
+        "prepare": "husky install",
+        "pw.run": "npx playwright test",
+        "pw.open": "npx playwright test --headed",
+        "pw.ci": "npx playwright test --headed --project=ci",
+        "pw.ci.headless": "npx playwright test --project=ci",
+        "pw.report": "npx playwright show-report",
+        "pw.ui": "npx playwright test --ui",
+        "code.gen": "npx playwright codegen"
+    },
+    "keywords": [],
+    "license": "ISC",
+    "dependencies": {
+        "@adyen/api-library": "^6.0.1",
+        "@types/node": "^18.7.14",
+        "async": "^3.2.4",
+        "core-js": "^3.29.0",
+        "@types/luxon": "^3.4.2",
+        "luxon": "^3.4.4"
+    },
+    "devDependencies": {
+        "@playwright/test": "^1.41.2",
+        "@faker-js/faker": "^8.0.2",
+        "typescript": "4.8.4",
+        "webpack": "^5.89.0"
+    }
+}
