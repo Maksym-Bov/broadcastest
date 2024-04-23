@@ -10,8 +10,6 @@ test('play video 1', async ({page}) => {
     await page.locator('#name').fill(userName);
     await page.locator('.btn').click();
     await new Promise(resolve => setTimeout(resolve, 10000));
-
-
-    await new Promise(resolve => setTimeout(resolve, 60000));
+    await new Promise(resolve => setTimeout(resolve, 600000));
     console.log('wait 60 sec');
 })
