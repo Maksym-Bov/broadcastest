@@ -1,10 +1,11 @@
 import {test} from "@playwright/test";
 import {faker} from "@faker-js/faker";
+import arr  from "../arr.json";
 
-const link = 'https://pharmaevents.proximaresearch.com/uk/event-214/tr/event22?token='
+const link = 'https://pharmaevents.proximaresearch.com/en/event-216/tr?token='
 
 test('play video 1', async ({page}) => {
-    const currentDateHash = faker.number.int(100);
+    const currentDateHash = arr[0].invited_link_token;
     const userName = faker.internet.userName();
     await page.goto(`${link}${currentDateHash}`);
     await page.locator('#name').fill(userName);
